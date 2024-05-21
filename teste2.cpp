@@ -1,18 +1,34 @@
 #include<stdio.h>
 #define TAM 10
+
+
+struct Pessoa{
+    char nome[20];
+    int idade, altura;
+    char mora;
+
+
+}
+
+    /* data */
+};
+
 int main(){
 
+    struct Pessoa pessoas;
+
     for(int i =0; i < TAM; i++){
-        char nome[20];
-        int idade, altura;
-        printf("QUAL SEU NOME? \n");
-        scanf("%s ", &nome );
+        
+        printf("QUAL SEU NOME ?\n");
+        scanf("%s", &pessoas[i].nome);
 
-        printf("QUAL SUA IDADE ?");
-        scanf("%d", &idade);
+        printf("QUAL SUA IDADE ? \n");
+        scanf("%d", &pessoas[i].idade);
 
-        printf("QUAL SUA ALTURA?");
-        scanf("%d", &altura);
+        printf("QUAL SUA ALTURA ? \n ");
+        scanf("%d ", &pessoas[i].altura);
+        
+
 
 
     }
